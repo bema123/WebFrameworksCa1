@@ -1,8 +1,6 @@
 ﻿using System;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
+
 public class Registration
 {
 	public Registration()
@@ -18,8 +16,6 @@ public class Registration
         public string Workshop { get; set; } = "";
 
         public bool RequiresLaptop { get; set; }
-    //
-    // TODO: Add constructor logic here
-    //
+    
 }
 }
