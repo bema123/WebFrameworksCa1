@@ -1,15 +1,15 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-
+namespace Registration.Models;
 public class Registration
 {
-	public Registration()
-	{
-		[Required(errorMessage = "First Name is required")]
+
+		[Required(ErrorMessage = "First Name is required")]
 		public string FirstName { get; set; } = "";
 
         [Required]
-        [Range(16,100, ErrorMessage = "Age must be between 16 and 100")]
+        [Range(16,120, ErrorMessage = "Age must be between 16 and 120")]
         public int Age { get; set; }
 
         [Required(ErrorMessage = "please select a workshop.")]
@@ -29,9 +29,9 @@ public class Registration
     {
         return "First Name is - " + FirstName + 
             " age is - "  + Age +
-            " Workshop is - " +Workshop + 
-            "Requires Laptop - " + RequiresLaptop;
+            " Workshop is - " + Workshop + 
+            " Requires Laptop - " + RequiresLaptop;
     }
 
 }
-}
+
